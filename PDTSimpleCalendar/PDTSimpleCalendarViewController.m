@@ -116,7 +116,7 @@ static const NSCalendarUnit kCalendarUnitYMD = NSCalendarUnitYear | NSCalendarUn
 - (NSCalendar *)calendar
 {
     if (!_calendar) {
-        [self setCalendar:[NSCalendar currentCalendar]];
+        [self setCalendar:[NSCalendar autoupdatingCurrentCalendar]];
     }
     return _calendar;
 }
